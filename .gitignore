@@ -1,3 +1,5 @@
 .vscode
 launch.json
 Projects.code-workspace
+__pycache__/
+*.pyc
