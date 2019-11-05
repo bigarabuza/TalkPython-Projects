@@ -14,19 +14,19 @@ def pull_site():
 
 def scrape(site):
     chapters = []
-    sections = []
-    sub_sections = []
     soup = BeautifulSoup(site.text, 'html.parser')
     html_chapters_list = soup.find_all('li', 'toctree-l1')
-    html_sections_list = soup.find_all('li', 'toctree-l2')
-    html_subsections_list = soup.find_all('li', 'toctree-l3')
-
+    
     for item in html_chapters_list:
         chapters.append(item.getText())
     for chapter in chapters:
-        print(chapter)
-    
+        print(chapter)  
+        print('end')  
     
 
 if __name__ == "__main__":
     main()
+
+
+
+
